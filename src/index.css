@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+
+    --accent: var(--orange);
+    /* overflow: hidden; */
+    user-select: none;
+}
+
+
+.box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--accent);
+    position: relative;
+    z-index: 999;
+}
+
+#_motion-btn button {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    background-color: #db8708;
+    border-radius: 10px;
+    outline: none;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+canvas {
+    user-select: none;
+}
+
+.initial-text h2 {
+    font-size: 1.125rem
+        /* 18px */
+    ;
+    line-height: 1.75rem
+        /* 28px */
+    ;
+    letter-spacing: 0.05em;
+}
+
+@media screen and (min-width: 1536px) {
+    .initial-text h2 {
+        font-size: 1.875rem
+            /* 30px */
+        ;
+        line-height: 2.25rem
+            /* 36px */
+    }
+}
+
+.main-text h2 {
+    font-size: 2.25rem
+        /* 36px */
+    ;
+    line-height: 2.5rem
+        /* 40px */
+    ;
+    letter-spacing: 0.05em;
+}
+
+@media (min-width: 768px) {
+    .main-text h2 {
+        font-size: 1.875rem;
+        /* 30px */
+        line-height: 2.25rem;
+        /* 36px */
+    }
+}
+
+@media (min-width: 1536px) {
+    .main-text h2 {
+        font-size: 3rem
+            /* 48px */
+        ;
+        line-height: 1;
+    }
+}
