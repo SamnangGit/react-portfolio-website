@@ -10,10 +10,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_16903v3",
-        "template_bw9x26s",
+        "Your Service ID",
+        "Your Template",
         form.current,
-        "zrzahRE1ikZLAMz67"
+        "Your API Code"
       )
       .then(
         (result) => {
